@@ -32,7 +32,7 @@ $(function(){
 	$("#level2").mouseup(function(){
 	
 	
-		if($("#level2").position().top <= ($("#level0").position().top + 30)){
+		if($("#level2").position().top <= ($("#level0").position().top + 100)){
 			//lvl1.append(lvl1.position().top);
 			var lvl0top = ($("#level0").position().top + 120) +"px";
 			var lvl0top1 = ($("#level0").position().top + 60) +"px";
