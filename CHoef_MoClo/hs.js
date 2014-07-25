@@ -1,16 +1,36 @@
 $(function(){
 
-
+	var greens = $("#greens").draggable({zIndex: 100});
 	//var lvl0 = $( "#level0" ).draggable({ handle: "p", axis: "y", containment: [0, 75, 800, 600] });
 	var lvl1 = $( "#level1" ).draggable({ handle: "p", axis: "y", containment: [0, 10, 800, 600] });
 	var lvl2 = $( "#level2" ).draggable({ handle: "p", axis: "y", containment: [0, 10, 800, 600] });
-	
+	//$("#level2").droppable({ });
 	var lvl1clicked = false;
-	
+	$("#drop").droppable({
+		hoverClass: "ui-state-active",
+		drop: function( event, ui ) {
+        	$( this ).css("background","yellow");
+        	//$("#greens").draggable("snap", "#drop");
+        	$(ui.draggable).appendTo($(this))
+                                           .css({position:'static', left:'0px', top:'0px'})
+                                           .draggable('option', 'disabled', false)
+                                           .css({position:'relative'});
+        	//$("#drop").append($("#greens"));
+        	//$(this).draggable("disabled", "true");
+        	$(this).css("z-index", "0");
+        }
+		});
+		
 	$("#level1").mousedown(function(){
 		lvl1clicked = true;
 	
 	});	
+	
+	greens.mousedown(function(){
+		//$("#greens").css("z-index", "2");
+	});
+	
+
 	
 	$("#level1").mouseup(function(){
 		
