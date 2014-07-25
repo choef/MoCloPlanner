@@ -19,16 +19,56 @@
 </head>
 <body>
 <h1>Welcome to MoClo Planner</h1>
-
+<!--level0 panel contains tabs to sort through different categories of parts -->
 <div id="level0" class="ui-widget-content, panel">
   <p class="ui-widget-header">Level 0</p>
-  <img src="arugula.gif" alt = "Salad greens" height="100" width="100" id="greens">
-
-<div id="level1" class="ui-widget-content, panel">
-  <p class="ui-widget-header">Level 1</p>
-  <div id="drop">
+  
+  <!--tabs contain different parts -->
+  <div id="tabs">
+  <ul>
+    <li><a href="#fragment-1">Greens</a></li>
+    <li><a href="#fragment-2">Toppings</a></li>
+    <li><a href="#fragment-3">Dressing</a></li>
+  </ul>
+  <div id="fragment-1">
+    <img src="MoCloImages/arugula.gif" alt = "Arugula" height="100" width="100" id="arugula" class="greens">
+    <img src="MoCloImages/spinach.jpg" alt = "Spinach" height="100" width="100" id="spinach" class="greens">
+    <img src="MoCloImages/lettuce.jpg" alt = "Lettuce" height="100" width="100" id="lettuce" class="greens">
+    </div>
+  <div id="fragment-2">
+  	<img src="MoCloImages/mandarin.jpg" alt = "Mandarin Oranges" height="100" width="100" id="mandarin" class="toppings">
+  	<img src="MoCloImages/pecan.jpg" alt = "Glazed Pecans" height="100" width="100" id="pecan" class="toppings">
+  	<img src="MoCloImages/avocado.jpg" alt = "Avocado" height="100" width="100" id="avocado" class="toppings">
+  </div>
+  <div id="fragment-3">
+  	<img src="MoCloImages/italian.jpg" alt = "Italian Dressing" height="100" width="100" id="italian" class="dressing">
+  	<img src="MoCloImages/ranch.jpg" alt = "Ranch dressing" height="100" width="100" id="ranch" class="dressing">
+  	<img src="MoCloImages/balsamic.jpg" alt = "Balsamic Vinaigrette" height="100" width="100" id="balsamic" class="dressing">
+  	<img src="MoCloImages/raspberry.jpg" alt = "Raspberry Walnut Dressing" height="100" width="100" id="raspberry" class="dressing">
   </div>
 </div>
+</div>
+  
+
+<div id="level1" class="ui-widget-content, panel">
+
+  <p class="ui-widget-header">Level 1</p>
+  <div class="drop" id="greenDrop">
+  </div>
+  <div class="drop" id="toppingsDrop">
+  </div>
+  <div class="drop" id="dressingDrop">
+  </div>
+  
+  
+  <div id="combos">
+  	<button type="button" id="comboButton">Combine</button>
+	
+	</div>
+	
+</div>
+
+
 <div id="level2" class="ui-widget-content, panel">
   <p class="ui-widget-header">Level 2</p>
 

@@ -4,17 +4,22 @@
 
 }
 
-#drop{
+.drop{
 	border-style: solid;
 	height: 100px;
 	width: 100px;
 	background:orange;
+	float:left;
+}
+
+button{
+	float:right;
 }
 
 .ui-widget-header {
 	height:40px;
 	text-align: center;
-
+	
 }
 
 #level0{
