@@ -1,7 +1,6 @@
 .panel{
 	border-style: solid;
 	
-
 }
 
 .drop{
@@ -11,6 +10,14 @@
 	background:orange;
 	float:left;
 }
+
+#combos{
+	border-style:solid;
+	height:400px;
+	float:bottom;
+	width:600px;
+}
+
 
 button{
 	float:right;

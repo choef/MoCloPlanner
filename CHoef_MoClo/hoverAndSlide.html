@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="jquery-ui-1.11.0/jquery-ui.css">
   <script src="jquery-ui-1.11.0/external/jquery/jquery.js"></script>
   <script src="jquery-ui-1.11.0/jquery-ui.js"></script>
-  <script src="hs.js"></script>
+  <script src="Panels.js"></script>
+  <script src="Parts.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
   <link rel="stylesheet" href="MoClo.css">
   <style>
@@ -53,19 +54,22 @@
 <div id="level1" class="ui-widget-content, panel">
 
   <p class="ui-widget-header">Level 1</p>
-  <div class="drop" id="greenDrop">
-  </div>
-  <div class="drop" id="toppingsDrop">
-  </div>
-  <div class="drop" id="dressingDrop">
-  </div>
-  
-  
-  <div id="combos">
+  <table id = "lvl1Table">
+  <tr>
+  <td class="drop" id="greenDrop">
+  </td>
+  <td class="drop" id="toppingsDrop">
+  </td>
+  <td class="drop" id="dressingDrop">
+  </td>
+  </tr>
+	<tr>
+  <td id="combos">
   	<button type="button" id="comboButton">Combine</button>
 	
-	</div>
-	
+	</td>
+	</tr>
+	</table>
 </div>
 
 
