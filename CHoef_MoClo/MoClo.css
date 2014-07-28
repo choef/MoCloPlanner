@@ -1,19 +1,26 @@
 .panel{
 	border-style: solid;
+	overflow: scroll;
 	
 }
 
 .drop{
 	border-style: solid;
-	height: 100px;
-	width: 100px;
+	height: 200px;
+	width: 200px;
 	background:orange;
 	float:left;
+}
+.lvl1Perm{
+	height:20px;
+	width:20px;
+	background:purple;
+
 }
 
 #combos{
 	border-style:solid;
-	height:400px;
+	height:200px;
 	float:bottom;
 	width:600px;
 }
@@ -39,7 +46,7 @@ button{
 #level1{
 	z-index:1;
 	position:fixed;
-	top: 400px;
+	top: 500px;
 	height:500px;
 	background: #B0B0B0;
 	width: 1000px;
@@ -48,7 +55,7 @@ button{
 #level2{
 	z-index:2;
 	position:fixed;
-	top: 475px;
+	top: 575px;
 	height: 500px;
 	background:#D0D0D0;
 	width: 1000px;

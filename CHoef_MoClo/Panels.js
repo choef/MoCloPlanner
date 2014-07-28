@@ -13,8 +13,9 @@ $(function(){
 	*/
 	
 	//These two panels are movable and can be dragged up and down to resize
-	var lvl1 = $( "#level1" ).draggable({ handle: "p", axis: "y", containment: [0, 10, 800, 600] });
-	var lvl2 = $( "#level2" ).draggable({ handle: "p", axis: "y", containment: [0, 10, 800, 600] });
+	var lvl1 = $( "#level1" ).draggable({ handle: "p", axis: "y", containment: [0, 0, 800, 575] });
+	var lvl2 = $( "#level2" ).draggable({ handle: "p", axis: "y", containment: [0, 0, 800, 575] });
+	
 	
 	//this variable helps to adjust for cases when level 1 is dragged behind level 2
 	var lvl1clicked = false;
@@ -35,6 +36,20 @@ $(function(){
 				top: lvl0top
 			});
 		}	
+		
+	if($("#level1").position().top >= 500){
+			var backUp = (500) +"px";
+			var backUp2 = 575 + "px";
+			$("#level1").animate({
+				top: backUp
+			});
+			$("#level2").animate({
+				top:backUp2
+			});
+		}	
+		
+		
+		
 	});
 	
 	//adjusts level2 to not cover up levels
@@ -72,6 +87,17 @@ $(function(){
 			
 			}
 		}
+		
+		if($("#level1").position().top >= 500){
+			var backUp = (500) +"px";
+			var backUp2 = 575 + "px";
+			$("#level1").animate({
+				top: backUp
+			});
+			$("#level2").animate({
+				top:backUp2
+			});
+		}	
 	});
 	
 	
