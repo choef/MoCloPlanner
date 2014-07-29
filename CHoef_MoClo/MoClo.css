@@ -1,28 +1,42 @@
 .panel{
 	border-style: solid;
-	overflow: scroll;
+	
 	
 }
 
-.drop{
+
+.drop, #lvl2Drop{
 	border-style: solid;
 	height: 200px;
 	width: 200px;
 	background:orange;
 	float:left;
+
+}
+
+#lvl2Drop{
+	width: 400px;
+
+
 }
 .lvl1Perm{
 	height:20px;
 	width:20px;
-	background:purple;
+	display: inline;
+	z-index:3
+	
 
 }
+
+
+
 
 #combos{
 	border-style:solid;
 	height:200px;
 	float:bottom;
 	width:600px;
+	/*overflow: scroll;*/
 }
 
 
@@ -41,6 +55,7 @@ button{
 	background:#909090;
 	position: absolute;
 	width: 1000px;
+	
 }
 
 #level1{
@@ -62,8 +77,7 @@ button{
 
 }
 
-#greens{
+/*#greens{
 
 	z-index:1;
-
-}
+}*/
