@@ -48,7 +48,7 @@ $(function(){
 		for(var i = greenImg.length; i>0; i--){
 			for(var j = topImg.length; j>0; j--){
 				for(var k = dressImg.length; k>0; k--){
-			$("#combos").append("<div class ='lvl1Perm' id='perm"+x+"'></div>");
+			$("#combos").append("<span class ='lvl1Perm' id='perm"+x+"'></span>");
 			$(".lvl1Perm").draggable({
        			containment: 'document',
        			helper: 'clone',
@@ -85,9 +85,10 @@ $(function(){
         	//$("#drop").append($("#greens"));
         	//$(ui.draggable).draggable("disabled", "true");
         	//$(this).css("z-index", "0");
+        	$("<p></p>").appendTo($(this));
         }
 		});
-		$("#lvl2Drop").droppable("option","accept",".lvl1Perm");
+		$(".lvl2Drop").droppable("option","accept",".lvl1Perm");
 		
 	
 	
