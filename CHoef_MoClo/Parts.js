@@ -53,11 +53,11 @@ $(function(){
        			containment: 'document',
        			helper: 'clone',
        			zIndex:10000,
-       			//appendTo: "#lvl2Drop"
+       			appendTo: "#lvl2Drop"
    			});
-			var gi = $("#greenDrop img:nth-child("+i+")").clone().appendTo("#perm"+x);
-			var ti = $("#toppingsDrop img:nth-child("+j+")").clone().appendTo("#perm"+x);
-			var di = $("#dressingDrop img:nth-child("+k+")").clone().appendTo("#perm"+x);
+			var gi = $("#greenDrop img:nth-child("+i+")").clone().appendTo("#perm"+x);//.draggable({snap: "#perm"+x, disabled: true});
+			var ti = $("#toppingsDrop img:nth-child("+j+")").clone().appendTo("#perm"+x);//.draggable({snap: true, disabled: true});
+			var di = $("#dressingDrop img:nth-child("+k+")").clone().appendTo("#perm"+x);//.draggable({snap: true, disabled:true});
 			$("#combos").append("<p></p>");
 			
 			x++;
@@ -72,6 +72,13 @@ $(function(){
 	
 	});
 	
+	$(".lvl1Perm").draggable({
+		drag: function( event, ui ) { 
+		
+		$(".lvl1Perm").css({display:"inline", overflow:"scroll-x"})
+		}
+	
+	});
 	
 	$("#lvl2Drop").droppable({
 		hoverClass: "ui-state-active",
