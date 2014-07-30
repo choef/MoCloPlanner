@@ -1,14 +1,20 @@
 html{
 	/*: 0.7;*/
+}
 
+.ui-tab-default {
+    border: 1px solid #cccccc;
+/*	background: #f6f6f6 url("images/ui-bg_gloss-wave_100_f6f6f6_500x100.png") 50% 50% repeat-x;*/	
+    font-weight: bold;
+	color: #1c94c4;
+}
+
+.ui-tab-header {
 
 }
 
-
 .panel{
-	border-style: solid;
-	
-	
+	border-style: solid;	
 }
 
 
@@ -18,25 +24,19 @@ html{
 	width: 200px;
 	background:orange;
 	float:left;
-
 }
 
 #lvl2Drop{
 	width: 400px;
 	overflow: scroll;
-
 }
+
 .lvl1Perm{
 	height:20px;
 	width:300px;
 	/*display: inline-block;*/
 	/*z-index:3*/
 }
-
-
-
-
-
 
 #combos{
 	
