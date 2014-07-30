@@ -8,7 +8,7 @@
   <script src="jquery-ui-1.11.0/jquery-ui.js"></script>
   <script src="Panels.js"></script>
   <script src="Parts.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="MoClo Web Planner theme.css">
   <link rel="stylesheet" href="MoClo.css">
   <style>
   	
@@ -16,6 +16,17 @@
   
   
   </style>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+	$( "#tabs" ).removeClass("ui-widget-content");
+	$( "#tabs" ).removeClass("ui-state-default");
+	$( "#tabs ul" ).removeClass("ui-widget-header");
+	$( "#tabs" ).addClass("ui-tab-default");
+	$( "#tabs" ).addClass("ui-tab-header");
+  });
+  </script>
   
 </head>
 <body>
