@@ -97,6 +97,13 @@ $(function(){
 		});
 		$(".lvl2Drop").droppable("option","accept",".lvl1Perm");
 		
+		
+	$("#comboButton2").click( function(){
+		console.log($("#lvl2Drop .lvl1Perm").length);
+		var lvl1seq = $("#lvl2Drop .lvl1Perm").find();
+		
+	
+	});
 	
 	
 		
