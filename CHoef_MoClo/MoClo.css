@@ -39,15 +39,11 @@ html{
 }
 
 #combos{
-	
 	border-style:solid;
 	width:600px;
 	overflow:scroll;
-	
 	height:200px;
 	float:bottom;
-	
-	
 }
 
 
@@ -56,10 +52,12 @@ button{
 }
 
 .ui-widget-header {
-	height:30px;
+	height: 1.5em;
 	text-align: center;
-	
+	text-height: 1.25em;
+	margin: 0;
 }
+
 
 #level0{
 	height: 600px;
@@ -85,7 +83,6 @@ button{
 	height: 500px;
 	background:#D0D0D0;
 	width: 1000px;
-
 }
 
 /*#greens{
